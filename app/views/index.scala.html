@@ -1,0 +1,10 @@
+@(users : List[model.database.dto.User])
+
+@main("Users") {
+    <ul>
+    @users.map { user =>
+        <li>@user.name</li>
+    }
+    </ul>
+
+}
